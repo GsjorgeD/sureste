@@ -1,0 +1,2 @@
+module VacantesHelper
+end

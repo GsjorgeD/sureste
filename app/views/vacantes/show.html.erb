@@ -1,0 +1,24 @@
+<header class="bg-white sm:w-auto h-20 md:h-32 lg:h-20 shadow ">
+  <div class="inline-block">
+    <img class="w-32 h-16 md:w-auto md:h-28 lg:w-32 lg:h-16 mt-3" src="https://pbs.twimg.com/media/E14yQSfVoAYvuO7?format=png&name=small" alt="">
+  </div>
+
+  <div class="inline-block space-y-2 float-right">
+    <button class="italic text-base md:text-4xl lg:text-base mt-5 md:mt-9 lg:mt-5 mr-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
+    Postularme
+  </button>
+  </div>
+</header>
+<body class="bg-gray-100">
+  <div class="mt-16 mr-16 ml-16">
+
+    <%= description_card @vacante.posicion, @vacante.descripcion do %>
+
+      <%= description_card_row 'Ubicacion', @vacante.ubicacion, top_border: false %>
+      <%= description_card_row 'Salario', @vacante.salario %>
+      <%= description_card_row 'Tipo', @vacante.tipo %>
+      <%= description_card_row 'Categoria', @vacante.categoria %>
+    <% end %>
+  </div>
+
+</body>
