@@ -1,0 +1,2 @@
+class NewVacante < ApplicationRecord
+end

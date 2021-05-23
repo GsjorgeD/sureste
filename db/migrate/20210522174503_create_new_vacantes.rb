@@ -1,6 +1,6 @@
-class CreateJobs < ActiveRecord::Migration[6.0]
+class CreateNewVacantes < ActiveRecord::Migration[6.0]
   def change
-    create_table :jobs do |t|
+    create_table :new_vacantes do |t|
       t.string :posicion
       t.text :descripcion
       t.string :ubicacion

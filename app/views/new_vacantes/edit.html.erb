@@ -1,0 +1,17 @@
+<header class="bg-white sm:w-auto h-20 md:h-32 lg:h-16 shadow ">
+  <div class="inline-block">
+    <img class="w-32 h-16  mt-3 md:w-auto md:h-28 lg:w-32 lg:h-14 lg:mt-2" src="https://pbs.twimg.com/media/E14yQSfVoAYvuO7?format=png&name=small" alt="">
+  </div>
+
+  <div class="inline-block space-y-2 float-right">
+    <button class="mt-5" >
+    <a class="italic text-base md:text-4xl lg:text-base mt-5 md:mt-9 lg:mt-3 mr-2 bg-white hover:bg-red-700 text-white font-bold py-2 px-4 rounded " href="/static_pages/index">Salir</a>
+  </button>
+  </div>
+</header>
+<h1>Editing New Vacante</h1>
+
+<%= render 'form', new_vacante: @new_vacante %>
+
+<%= link_to 'Show', @new_vacante %> |
+<%= link_to 'Back', new_vacantes_path %>

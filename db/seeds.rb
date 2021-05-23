@@ -32,3 +32,30 @@ vacantes = Vacante.create([
   categoria: "Programacion"
 }
   ])
+
+  new_vacantes = NewVacante.create([
+  {
+    posicion: "Programdor Front end",
+    descripcion: "Se solicita programador con conocimienetos en Html, CSS y JavaScript. Opcional conocimientos en Frameworks.",
+    ubicacion: "Remoto",
+    salario: 4000,
+    tipo: "Tiempo completo",
+    categoria: "Programacion"
+  },
+  {
+    posicion: "Programdor Back end",
+    descripcion: "Se solicita programador con conocimentos en uno varios lenguages como Go,Ruby y Java. Opcional conocimientos en creacion de APIS.",
+    ubicacion: "Remoto",
+    salario: 6000,
+    tipo: "Tiempo completo",
+    categoria: "Programacion"
+  },
+  {
+    posicion: "Desarrollador Web",
+    descripcion: "Se solicita",
+    ubicacion: "Remoto",
+    salario: 4000,
+    tipo: "tiempo completo",
+    categoria: "Programacion"
+  }
+    ])

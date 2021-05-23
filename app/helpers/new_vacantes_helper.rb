@@ -1,0 +1,2 @@
+module NewVacantesHelper
+end

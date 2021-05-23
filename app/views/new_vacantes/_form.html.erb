@@ -1,0 +1,55 @@
+
+<body class="bg-gray-100">
+  <div class=" mb-16 mr-16 ml-16 bg-white shadow overflow-hidden sm:rounded-md">
+
+
+<%= form_with(model: new_vacante, local: true) do |form| %>
+  <% if new_vacante.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(new_vacante.errors.count, "error") %> prohibited this new_vacante from being saved:</h2>
+
+      <ul>
+        <% new_vacante.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field ">
+    <%= form.label :posicion, class: "mt-4 mb-1 ml-44 text-lg" %>
+    <%= form.text_field :posicion, class: "text-base ml-44 border-2 border-gray-200 focus:border-blue-500  shadow-sm placeholder-gray-400 placeholder-opacity-100 focus:placeholder-gray-300", placeholder: "Ejem: Programador PHP" %>
+
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion, class: "mb-1 ml-44 text-lg" %>
+    <%= form.text_area :descripcion, class: "text-base ml-44  resize-x border-2 border-gray-200 focus:border-blue-500 shadow-sm placeholder-gray-400 placeholder-opacity-100 focus:placeholder-gray-300", placeholder: "Ejem: Se solicita programador con nociones en..."%>
+  </div>
+
+  <div class="field">
+    <%= form.label :ubicacion, class: "mb-1 ml-44 text-lg" %>
+    <%= form.text_field :ubicacion, class:"text-base ml-44 border-2 border-gray-200 focus:border-blue-500  shadow-sm placeholder-gray-400 placeholder-opacity-100 focus:placeholder-gray-300", placeholder: "Ejem: Remoto" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :salario, class: "mb-1 ml-44 text-lg" %>
+    <%= form.text_field :salario, class:"text-base ml-44 border-2 border-gray-200 focus:border-blue-500  shadow-sm placeholder-gray-400 placeholder-opacity-100 focus:placeholder-gray-300", placeholder: "Ejem: 5000.0" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo, class: "mb-1 ml-44 text-lg" %>
+    <%= form.text_field :tipo, class:"text-base ml-44 border-2 border-gray-200 focus:border-blue-500  shadow-sm placeholder-gray-400 placeholder-opacity-100 focus:placeholder-gray-300", placeholder: "Ejem: Tiempo completo" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :categoria, class: "mb-1 ml-44 text-lg" %>
+    <%= form.text_field :categoria, class:"text-base ml-44 border-2 border-gray-200 focus:border-blue-500  shadow-sm placeholder-gray-400 placeholder-opacity-100 focus:placeholder-gray-300", placeholder: "Ejem: Desarrollo web" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "text-base mt-2 mb-4 ml-48 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" %>
+  </div>
+<% end %>
+</div>
+</body>
