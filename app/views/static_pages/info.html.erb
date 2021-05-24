@@ -1,2 +1,65 @@
-<h1>StaticPages#info</h1>
-<p>Find me in app/views/static_pages/info.html.erb</p>
+<header class="bg-white sm:w-auto h-20 md:h-32 lg:h-16 shadow ">
+  <div class="inline-block">
+    <img class="w-32 h-16  mt-3 md:w-auto md:h-28 lg:w-32 lg:h-14 lg:mt-2" src="https://pbs.twimg.com/media/E14yQSfVoAYvuO7?format=png&name=small" alt="">
+  </div>
+
+  <div class="inline-block space-y-2 float-right">
+    <button class="mt-5" type="button" name="button"> <a href="/index" class="italic text-base md:text-4xl lg:text-base mt-5 md:mt-9 lg:mt-6 mr-2 bg-white hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
+      Home
+    </a></button>
+  </div>
+</header>
+<body class="bg-gray-100">
+  <div class="mb-16 mt-16 mr-16 ml-16 bg-white shadow overflow-hidden sm:rounded-md">
+    <div class=" w-auto h-1/2">
+     <div class="inline-block w-2/5 h-2/5 mt-8 ml-8">
+       <img class="" src="https://pbs.twimg.com/media/E0F8g1JXEAAo4Ri?format=jpg&name=medium" alt="">
+     </div>
+     <div class="inline-block mt-8 ml-8 w-2/5">
+       <h1 class="mb-2 text-xl font-bold leading-tight text-gray-900">En SuresT la T es porque buscamos talento...</h1>
+       <p class="text-xl">Tenemos como objetivo Reducir la brecha de contratación que existe actualmente. Si bien es cierto que los
+profesionales en tecnología como desarrolladores y programadores son muy
+demandados actualmente, únicamente los que poseen mayor experiencia son los
+contratados. Gracias a SuresT podrán obtener la experiencia que el mercado
+le exige, brindándoles la oportunidad de competir por trabajos de calidad en una de
+las mejores industrias en cuanto a remuneración.</p>
+     </div>
+    </div>
+    <div class="">
+      <div class="inline-block mt-6 w-2/5 ml-8 mb-2">
+        <h2 class="mb-6 text-xl font-bold leading-tight text-gray-900">No importa si tu area es otra, la industria Tech te puede adoptar</h2>
+        <p class="text-xl"> Si decidiste cambiar el rumbo de tu vida profecional o te interesa
+        mejorar tus ingresos trabajar en tecnologia puede ser una opcion.</p>
+
+        <p class="mt-2 text-xl mb-4">Adicionalmente te proporcinamos una calculadora percapita para corroborar si tus ingresos
+          son suficientes a tus necesidades. </p>
+      </div>
+      <div class="inline-block w-2/5 ml-6">
+         <h2 class="mt-1  text-xl font-bold leading-tight text-gray-900 mb-2 ">Calculadora Percapita</h2>
+         <p class="mt-2 text-xl"> El ingreso Percapita es un indicador de gran ayuda, se obtiene con el total del ingreso y el total de personas que dependen de ingreso.</p>
+         <p class="mt-3 text-xl"> Si el total es menor a 4,537.38 la industria Tech podia ayudarte a mejorarlo.</p>
+        <div class="inline-block">
+            <label class="text-md font-bold leading-tight text-gray-900" for="">Ingreso total mensual</label>
+            <input type="text" name="" value="" id="n1" class="text-sm  border-2 border-gray-200 focus:border-blue-500  shadow-sm placeholder-gray-400 placeholder-opacity-100 focus:placeholder-gray-300">
+        </div>
+        <div class="inline-block mt-4">
+            <label class="text-md font-bold leading-tight text-gray-900"for="">Total de integrantes</label>
+            <input type="text" name="" value="" id="n2" class="text-sm  border-2 border-gray-200 focus:border-blue-500  shadow-sm placeholder-gray-400 placeholder-opacity-100 focus:placeholder-gray-300">
+        </div>
+        <input name="suma" type="button" onClick="valor()" value="Calcular ingreso " class="text-md font-bold leading-tight text-white cursor-pointer  bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
+          <label class="text-md font-bold leading-tight text-gray-900"for="" >Ingreso percapita</label>
+        <input type="text" id="resultado" />
+      </div>
+    </div>
+
+
+  </div>
+</body>
+<script>
+  function valor() {
+    var n1 = document.getElementById("n1").value;
+    var n2 = document.getElementById("n2").value;
+    var resultado = parseInt(n1, 10) / parseInt(n2, 10);
+    document.getElementById("resultado").value = resultado;
+}
+</script>
