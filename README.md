@@ -6,7 +6,7 @@ egresados de universidades, autodidactas y personas con carreras diferentes a
 tecnología. Es importante resaltar que existe una infinidad de bolsas de trabajo, pero
 ninguna se enfoca directamente a este segmento.
 
-#Objetivo
+# Objetivo
 Reducir la brecha de contratación que existe actualmente. Si bien es cierto que los 
 profesionales en tecnología como desarrolladores y programadores son muy 
 demandados actualmente, únicamente los que poseen mayor experiencia son los 
@@ -14,9 +14,9 @@ contratados. Gracias a Talento Jobs podrán obtener la experiencia que el mercad
 le exige, brindándoles la oportunidad de competir por trabajos de calidad en una de 
 las mejores industrias en cuanto a remuneración.
 
-#Herramientas
+# Herramientas
 * Ruby on Rails como plataforma
 * Bootstrap como Framework de CSS
 
-#Link del proyecto
+# Link del proyecto
 https://sureste.herokuapp.com/
